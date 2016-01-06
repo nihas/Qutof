@@ -17,7 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="38dp"
         android:text="SELECT YOUR COUNTRY"
-        android:paddingLeft="60dp"
+        android:paddingLeft="55dp"
         android:textColor="#242424"
         android:textAllCaps="true"
         android:textSize="24dp"
@@ -28,8 +28,8 @@
     <Spinner
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/spinner"
-        android:background="@drawable/custom_spinner"
+        android:id="@+id/splash_screen_spinner"
+        android:background="@drawable/splash"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:layout_below="@+id/textView"
@@ -39,7 +39,7 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_below="@+id/spinner"
+        android:layout_below="@+id/splash_screen_spinner"
         android:layout_alignStart="@+id/textView2"
         android:layout_above="@+id/textView2"
         android:weightSum="1">
@@ -59,7 +59,7 @@
                 android:layout_marginLeft="50dp"
                 android:textColor="#ffffff"
                 android:background="#000000"
-                android:id="@+id/button" />
+                android:id="@+id/splash_screen_button1" />
         </FrameLayout>
 
         <FrameLayout
@@ -77,7 +77,7 @@
                 android:textColor="#ffffff"
                 android:background="#52a1ef"
                 android:textSize="20dp"
-                android:id="@+id/button2" />
+                android:id="@+id/splash_screen_button2" />
         </FrameLayout>
     </LinearLayout>
 
