@@ -1,14 +1,12 @@
 package com.example.user.qutof;
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.Spinner;
 
 import com.example.user.qutof.Adapters.SpinnerAdapter;
-import com.example.user.qutof.Adapters.SpinnerData;
+import com.example.user.qutof.Pojos.SpinnerData;
 
 import java.util.ArrayList;
 

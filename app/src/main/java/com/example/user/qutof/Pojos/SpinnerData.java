@@ -1,4 +1,4 @@
-package com.example.user.qutof.Adapters;
+package com.example.user.qutof.Pojos;
 
 /**
  * Created by USER on 06-01-16.
