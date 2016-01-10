@@ -1,40 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:contentInsetEnd="0dp"
+        app:contentInsetStart="0dp"/>
+
+
 
     <android.support.v7.widget.RecyclerView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/recycler_View" />
-    
-    <com.bartoszlipinski.recyclerviewheader.RecyclerViewHeader
-        android:id="@+id/header"
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/bottomToolbar"
         android:layout_width="match_parent"
-        android:layout_height="300dp">
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="bottom|end"
+        android:layout_alignParentBottom="true"
+        android:background="?attr/colorPrimary" >
+
 
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/demo1"
-            android:scaleType="fitXY"/>
+            android:padding="5dp"
+            android:gravity="center"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="bottom|left"
+            android:src="@drawable/aarow"
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:background="#000000"
-            android:alpha="0.8"
-            android:layout_marginTop="230dp"
-            android:layout_height="70dp"></LinearLayout>
+            />
+        <ImageView
+            android:padding="5dp"
+            android:gravity="center"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="bottom|center"
+            android:src="@drawable/aarow"
+            /><ImageView
+        android:padding="5dp"
+        android:gravity="center"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom|right"
+        android:src="@drawable/aarow"
+        android:layout_marginRight="10dp"
+        />
 
-    </com.bartoszlipinski.recyclerviewheader.RecyclerViewHeader>
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_alignBottom="@id/recycler_View"
-        android:background="#000000"
-        android:alpha="0.8"
-        android:layout_height="80dp"></LinearLayout>
+    </android.support.v7.widget.Toolbar>
 
 
 </RelativeLayout>
